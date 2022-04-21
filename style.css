@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 325px;
+  margin: 15% auto 0 auto;
+}
+#screen{
+  height: 74px;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  background-color: gray;
+}
+#output{
+  font-size: 26px;
+  height: 30px;
+  padding: 0 3px;
+}
+#display{
+  font-size: 36px;
+  height: 44px;
+  padding: 0 5px;
+}
+.inner-container{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(97, 110, 110);
+}
+.controls{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.lower{
+  display: flex;
+}
+.inputs{
+  flex-wrap: wrap;
+  width: 330px;
+  border-right: 0.5px solid rgb(194, 192, 192);
+}
+.input-button{
+  font-size: 26px;
+  width: 60px;
+  height: 80px;
+  border: none;
+  background-color: unset;
+}
+.operators{
+  display: flex;
+  flex-direction: column;
+}
+.operator-button{
+  font-size: 26px;
+  width: 60px;
+  height: 80px;
+  border: none;
+  background-color: unset;
+}
+@media screen and (max-width: 700px){
+  .container{
+    width: 100%;
+  }
+  #screen{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    background-color: gray;
+  }
+  #output{
+    font-size: 36px;
+    height: 50px;
+  }
+  #display{
+    font-size: 46px;
+    height: 54px;
+  }
+  .inputs{
+    min-width: 235px;
+    max-width: 250px;
+  }
+  .input-button{
+    width: 70px;
+  }
+  .operators{
+    display: flex;
+    flex-direction: column;
+  }
+  .operator-button{
+
+    width: 70px;
+  }
+}
